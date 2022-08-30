@@ -20,6 +20,9 @@ html{
     border-bottom: 1px solid rgba(128, 128, 128, 0.671);
     background-color: #fff;
     height: 100px;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
 }
 .logo2 h1{
     font-family: 'logo';
@@ -57,6 +60,11 @@ div.menu{
     width: 100%;
     height: 50px;
     color: white;
+        position: fixed;
+    top:100px; left: 0; right: 0;
+    z-index: 1;
+    background-color: #fff;
+
 }
 .menu ul{
     width: 80%;
@@ -135,3 +143,174 @@ div.menu{
     border-radius: 10px;
     font-size: 13px;
 }
+
+/* section 1 */
+.section1{
+    height:700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.section1 .box-container{
+/* border: 1px solid yellow; */
+height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80%;
+flex-wrap: wrap;
+margin-top: 50px;
+}
+
+.section1  h1{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.section1 .box-container .box {
+    /* border: 1px solid blue; */
+    height: 250px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section1 .box-container .box p{
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100
+}
+
+.section1 .box-container .box span{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.section1 .box-container .box .btn{
+    width:75px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 25px;
+    font-size: 11px;
+    text-align: center;
+}
+.section1 .box-container .box .btn:hover{
+    border-radius: 2px;
+    background:linear-gradient(#EFBE86, #F2CB9E,#EFBE86);
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.4s ease-in;
+    border: 1px solid #EFBE86;
+
+}
+
+
+.section1 .box-container .box img{
+width: 150px;
+height: 150px;
+}
+
+
+/* section 2 */
+.section2{
+    background-image: url(img/capaprt22.jpg);
+    background-size: cover;
+    height: 600px;
+
+}
+
+.section2 .box{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 800px;
+    top: 100px;
+}
+
+.section2 .box h1{
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.753);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section2 .box p{
+    color: rgba(0, 0, 0, 0.753);
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section2 .box button{
+    width: 100px;
+    height: 40px;
+    margin-left: 100px;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+  
+}
+
+.section2 .box button:hover{
+    font-size: 12px;
+    border-radius: 15px;
+}
+@media screen and (max-width: 1440px) {
+    body{
+        overflow-x: hidden;
+    }
+    .logo .logo2{
+      position: relative;
+      right: -50px;
+    }
+    .logo .prt3{
+       position: relative;
+       left: -300px;
+       top: -60px;
+    }
+    .menu ul li{
+        margin-top:5px;
+        position: relative;
+        left: 150px;
+    }        
+    .header h1{
+        top: 300px;
+        left:100px;
+    }
+
+        
+    .header .btn{
+        position: relative;
+        top: 400px;
+        left: 700px;
+    }
+
+    .section1 .box-container .box {
+        height: 150px;
+        width: 260px;
+    }
+    .section1  h1{
+        margin-left: 50px;
+    }
+    .header{
+        width: 1440px;
+    }
+    .section2{
+        width: 1440px;
+    }
+
+
+  }
