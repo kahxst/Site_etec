@@ -260,6 +260,11 @@ height: 150px;
     top: 100px;
 }
 
+.section2 .box .box2{
+    position: relative;
+    top: -600px;
+}
+
 .section2 .box .box2 h1{
     font-weight: 100;
     color: rgba(0, 0, 0, 0.753);
@@ -357,7 +362,7 @@ height: 150px;
     display: flex;
     margin-top: 100px;
     position: relative;
-    left: 200px;
+    left: 500px;
     
   }
 
@@ -365,7 +370,8 @@ height: 150px;
     width: 300px;
     height: 200px;
     text-align: center;
-
+    position: relative;
+    left: -150px;
   }
 
   .section3 .box-container .box img{
@@ -472,12 +478,16 @@ height: 150px;
     color: rgb(240, 96, 120);
   }
 
-  @media (max-width:768px){
+  @media (max-width:800px){
+    .logo2 h1{
+        position: relative;
+        left: -60px;
+    }
     .menu{
         width: 25%;
         position: absolute;
         right: 0;
-        height: 50%;
+        height: 35%;
         flex-direction: column;
         justify-content: flex-start;
         
@@ -499,6 +509,11 @@ height: 150px;
         font-size: 13px;
     }
 
+    
+.logo .prt3{
+    position: relative;
+    left: -30px;
+}
     .header{
      height: 550px;
      background-image: url(img/capa2.jpg);
@@ -507,11 +522,7 @@ height: 150px;
      background-size: cover;
      height: 550px;
      width: 100%;
-}
-
-    
-
-    
+    }   
 .header h1{
     display: flex;
     justify-content: center;
@@ -541,34 +552,224 @@ height: 150px;
 
 .header .btn{
     position: relative;
-    top: 400px;
-    left: 1200px;
+    top: 370px;
+    left: 350px;
     width: 100px;
-    height: 60px;
-    background:none;
-    border: 1px solid gray;
-    border-radius: 50px;
-    font-size: 14px;
-    color: rgb(44, 44, 44);
+
 }
 
-.header .btn:hover{
-    border-radius: 10px;
-    font-size: 13px;
+.section1{
+    height:700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .box-container{
+height: 700px;
+display: flex;
+width: 100%;
+flex-direction: column;
+flex-wrap: wrap;
+position: relative;
+top: -20px;
+}
+
+.section1  h1{
+    font-size: 22px;
+    position: relative;
+    top: -5px;
+}
+
+.section1 .box-container .box {
+    margin-left: 20px;
+    margin-bottom: 55px;
+}
+
+.section1 .box-container .box .btn{
+    margin-top: 1px;
+}
+
+.section1 .box-container .cima{
+    position: relative;
+    top: -100px;
+}
+
+.section1 .box-container .box p{
+    font-size: 14px;
+}
+
+
+.section1 .box-container .box .btn{
+    margin-top: 8px;
+}
+/* .section1 .box-container .box::nt .btn{
+    margin-top: 8px;
+} */
+
+.section1 .box-container .box img{
+width: 120px;
+height: 120px;
+margin-top: 50px;
+}
+
+/* /////////// */
+
+.section2{
+    background-image: url(img/capaprt22.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+}
+
+.section2 .box .img{
+    position: relative;
+    left: -1000px;
+    top: -72px;
+}
+.section2 .box .img img{
+    width: 900px;
+    height: 600px;
+}
+
+
+
+.section2 .box{
+    position: relative;
+    left: 580px;
+    top: 100px;
+}
+
+.section2 .box .box2{
+    position: relative;
+    top: -600px;
+    left: -60px;
 }
 
   }
 
   @media (max-width:400px){
-    
-    
-.header h1{
-    display: none;
 
+    
+.logo{
+
+    height: 50px;
+    display: flex;
+    /* justify-content:flex-end; */
+}
+.logo1 img{
+    width: 100px;
+    height: 50px;
+
+}
+.logo2 h1{
+    font-size: 35px;
+    position: relative;
+    left: -50px;
 }
 
 .logo .prt3{
+    position:relative;
+    left: -10px;
+}
+.logo .prt3 i{
+    font-size: 14px;
+}
+/* /////////////// */
+    
+    .menu{
+        top: 50px;
+    }  
+    .header{
+     height: 400px;
+    }
+      
+.header h1{
+    position: relative;
+    top: 150px;
+    left:257px;
+    font-size: 50px;
+
+}
+
+
+.header h1 .um{
+    position: relative;
+    top: 60px;
+    left:-127px;
+}
+.header h1 .dois{
+    position: relative;
+    top: 120px;
+    left:-250px;
+}
+
+
+.header .btn{
     display: none;
+}
+
+
+/* ///////// */
+
+.section1{
+    height:2130px;
+    width: 100%;
+}
+.section1 .box-container{
+height: 2130px;
+width: 90%;
+flex-wrap: nowrap;
+margin-top: 50px;
+position: relative;
+top:-60px ;
+}
+
+.section1  h1{
+    position: relative;
+    top: -5px;
+    left: -10px;
+}
+
+.section1 .box-container .box {
+    height: 250px;
+    width: 360px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    top:-23px ;
+}
+
+.section1 .box-container .box .btn{
+    margin-top: 10px;
+}
+
+.section2{
+    height: 400px;
+}
+
+.section2 .box .img img{
+    /* border: 1px solid  red; */
+    width: 570px;
+    height: 390px;
+    position: relative;
+    left: -30px;
+}
+
+.section2 .box{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 800px;
+    top: 100px;
+}
+
+.section2 .box .box2{
+    position: relative;
+    top: -368px;
+    left: -634px;
 }
 
   }
