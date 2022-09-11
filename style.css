@@ -19,10 +19,18 @@ html{
 .logo{
     border-bottom: 1px solid rgba(128, 128, 128, 0.671);
     background-color: #fff;
-    height: 100px;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
+}
+.logo1 img{
+    position: relative;
+    width: 200px;
+    height: 110px;
+
 }
 .logo2 h1{
     font-family: 'logo';
@@ -36,16 +44,14 @@ html{
     flex-direction: column;
     margin-top:8px ;
     position: relative;
-    left: 1px;
+    width: 500px;
+
 }
 
 .logo .prt3{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   position: relative;
-   left: -400px;
-   top: -60px;
 }
 
 .logo .prt3 i{
@@ -57,15 +63,16 @@ html{
     font-size: 18px;
 }
 
-div.menu{
+.menu{
     border-bottom: 1px solid rgba(128, 128, 128, 0.671);
     width: 100%;
     height: 50px;
     color: white;
-        position: fixed;
+    position: fixed;
     top:100px; left: 0; right: 0;
     z-index: 1;
     background-color: #fff;
+    transition: 1s;
 
 }
 .menu ul{
@@ -154,10 +161,8 @@ div.menu{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .section1 .box-container{
-/* border: 1px solid yellow; */
 height: 600px;
 display: flex;
 justify-content: center;
@@ -174,7 +179,6 @@ margin-top: 50px;
 }
 
 .section1 .box-container .box {
-    /* border: 1px solid blue; */
     height: 250px;
     width: 360px;
     display: flex;
@@ -188,8 +192,8 @@ margin-top: 50px;
 
 .section1 .box-container .box p{
     margin-top: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 .section1 .box-container .box span{
@@ -231,8 +235,21 @@ height: 150px;
     background-image: url(img/capaprt22.jpg);
     background-size: cover;
     height: 600px;
-
+    display: flex;
 }
+
+.section2 .box .img{
+    position: relative;
+    left: -1000px;
+    top: -72px;
+}
+.section2 .box .img img{
+    /* border: 1px solid  red; */
+    width: 900px;
+    height: 600px;
+}
+
+
 
 .section2 .box{
     /* border: 1px solid red; */
@@ -243,21 +260,21 @@ height: 150px;
     top: 100px;
 }
 
-.section2 .box h1{
+.section2 .box .box2 h1{
     font-weight: 100;
     color: rgba(0, 0, 0, 0.753);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.section2 .box p{
+.section2 .box .box2 p{
     color: rgba(0, 0, 0, 0.753);
     font-weight: 100;
     font-size: 18px;
     margin-bottom: 30px;
 }
 
-.section2 .box button{
+.section2 .box .box2 button{
     width: 100px;
     height: 40px;
     background: none;
@@ -268,7 +285,6 @@ height: 150px;
 .section2 .box button:hover{
     font-size: 12px;
     border-radius: 10px;
-    background:linear-gradient(#FFA07A, #FFDAB9);
     transition: 1.5s;
 }
 @media screen and (max-width: 1440px) {
@@ -279,11 +295,7 @@ height: 150px;
       position: relative;
       right: -50px;
     }
-    .logo .prt3{
-       position: relative;
-       left: -300px;
-       top: -60px;
-    }
+
     .menu ul li{
         margin-top:5px;
         position: relative;
@@ -366,8 +378,6 @@ height: 150px;
   .section3 .box-container .box .minibox{
     position: relative;
     bottom: 10px;
-
-
 
   }
 
@@ -460,4 +470,105 @@ height: 150px;
 
   .rodape .box-container .box .minibox2 .pink:hover{
     color: rgb(240, 96, 120);
+  }
+
+  @media (max-width:768px){
+    .menu{
+        width: 25%;
+        position: absolute;
+        right: 0;
+        height: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu ul li{
+        margin-left: -155px;
+        padding-bottom: 25px;
+        padding-top: 10px;
+        font-size: 90%;
+    }  
+
+    .menu ul li a:hover{
+        color:rgb(102, 101, 101) ;
+        font-size: 13px;
+    }
+
+    .header{
+     height: 550px;
+     background-image: url(img/capa2.jpg);
+     background-size:400px 400px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 550px;
+     width: 100%;
+}
+
+    
+
+    
+.header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+    left:165px;
+    font-size: 60px;
+    font-weight: 100; 
+    line-height: 75px;
+    color: rgb(80, 80, 80);
+    font-family: 'logo';
+}
+
+.header h1 .um{
+    font-family: 'logo';
+    position: relative;
+    top: 60px;
+    left:-155px;
+}
+.header h1 .dois{
+    font-family: 'logo';
+    position: relative;
+    top: 120px;
+    left:-300px;
+}
+
+.header .btn{
+    position: relative;
+    top: 400px;
+    left: 1200px;
+    width: 100px;
+    height: 60px;
+    background:none;
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+}
+
+.header .btn:hover{
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+  }
+
+  @media (max-width:400px){
+    
+    
+.header h1{
+    display: none;
+
+}
+
+.logo .prt3{
+    display: none;
+}
+
   }
