@@ -928,4 +928,34 @@ top:-60px ;
     position: relative;
     left: -10px;
 }
-  }                      
+  }   
+  
+  
+
+  /* ////////////// */
+
+  @media (max-width: 360px){
+    .section3 .box-container .box {
+    position: relative;
+    top: -75px;
+    left: -211px;
+}
+
+.section2 .box .box2 {
+    position: relative;
+    top: -368px;
+    left: -639px;
+}
+
+.header h1 {
+    position: relative;
+    left: 237px;
+}
+
+.menu {
+    /* position: absolute;
+    top: 49px;
+    height: 43%; */
+    width: 30%;
+}
+  }
