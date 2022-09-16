@@ -934,7 +934,7 @@ top:-60px ;
 
   /* ////////////// */
 
-  @media (max-width: 360px){
+  @media (max-width: 390px){
     .section3 .box-container .box {
     position: relative;
     top: -75px;
