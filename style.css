@@ -486,6 +486,9 @@ height: 150px;
         position: relative;
         left: -60px;
     }
+    .logo1 img{
+        display: none;
+    }
     .menu{
         width: 25%;
         position: absolute;
@@ -499,6 +502,34 @@ height: 150px;
     .menu ul{
         flex-direction: column;
         align-items: flex-start;
+    }
+
+
+    
+    .menu{
+        position: absolute;
+        top: 49px;
+        height: 43%;
+        width: 20%;
+        transform: translateX(-100%);
+    } 
+    
+    .burguer div{
+            background-color: #fabc86 ;
+            height: 3px;
+            width: 25px;
+            margin: 3px 0;
+            /* display: none; */
+    }
+    .burguer{
+     cursor: pointer;
+     position: fixed;
+     top: 40px;
+     left: 10px;
+     z-index: 2;
+    }
+    .show{
+        transform: translateX(0);
     }
     .menu ul li{
         margin-left: -155px;
