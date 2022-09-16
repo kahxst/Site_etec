@@ -732,7 +732,7 @@ margin-top: 50px;
     .menu{
         position: absolute;
         top: 49px;
-        height: 43%;
+        height: 30%;
         width: 20%;
         transform: translateX(-100%);
     } 
@@ -755,7 +755,7 @@ margin-top: 50px;
         transform: translateX(0);
     }
      .menu ul li{
-        margin-left: -143px;
+        margin-left: -155px;
      }
     .header{
      height: 400px;
@@ -953,9 +953,9 @@ top:-60px ;
 }
 
 .menu {
-    /* position: absolute;
-    top: 49px;
-    height: 43%; */
-    width: 30%;
+    position: absolute;
+    top: 45px;
+    height: 31%;
+    width: 25%;
 }
   }
