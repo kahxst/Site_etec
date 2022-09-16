@@ -716,8 +716,8 @@ margin-top: 50px;
     .burguer{
      cursor: pointer;
      position: fixed;
-     bottom: 503px;
-     right: 435px;
+     top: 15px;
+     left: 10px;
      z-index: 2;
     }
     .show{
